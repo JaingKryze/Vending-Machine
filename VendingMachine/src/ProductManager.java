@@ -46,6 +46,6 @@ public class ProductManager
 		}
 	public static void incrementItemCode()
 		{
-		
+		System.out.println();
 		}
 	}
