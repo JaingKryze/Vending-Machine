@@ -13,8 +13,6 @@ public class ProductManager
 		{
 		p = product;
 		q = quantity;
-		itemCode = nextItemCode;
-		incrementItemCode();
 		}
 	public boolean vendItem()
 		{
@@ -48,14 +46,6 @@ public class ProductManager
 		}
 	public static void incrementItemCode()
 		{
-		char letter = nextItemCode.charAt(0);
-		char number = nextItemCode.charAt(1);
-		number++;
-		if(number > 53)
-			{
-			number = '5';
-			letter++;
-			}
-		nextItemCode = String.valueOf(letter) + String.valueOf(number);
+		
 		}
 	}
