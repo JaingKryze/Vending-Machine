@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class InventoryManager
 	{
-	ArrayList<ProductManager> allProducts;
+	public static ArrayList<ProductManager> allProducts;
 	public void addProduct()
 		{
 		
