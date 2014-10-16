@@ -26,11 +26,17 @@ public class Cashier
 		}
 	public String returnChange(int[] money)
 		{
-		return("Your change is " + currentCents + " cents.");
+		int changeQuarters = currentCents/25;
+		currentCents = currentCents%25;
+		int changeDimes = currentCents/10;
+		currentCents = currentCents%10;
+		int changeNickels = currentCents/5;
+		currentCents = currentCents%5;
+		return("Your change is " + changeQuarters + " quarters, " + changeDimes + " dimes, " + changeNickels + " nickels, and " +currentCents + " pennies.");
 		}
 	public static String showCash(int[] money)
 		{
-		//display the money input into the machine String with dollar sign, displays money
+		String showCash = 
 		}
 	public static int toPennies(int[] value)
 		{
