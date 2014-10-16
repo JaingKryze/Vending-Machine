@@ -11,7 +11,6 @@ public class Product
 	public String getSnackName()
 		{
 		return snackName;
-		//work on other class 123
 		}
 	public int getCostInCents()
 		{

@@ -1,8 +1,7 @@
 
 public class Cashier
 	{
-	private int centCount = 0;
-	private int currentCents;
+	private int currentCents = 0;
 	public Cashier(int c)
 		{
 		currentCents = c;
@@ -10,24 +9,24 @@ public class Cashier
 	public int[] addMoney(int value)
 		{
 		//take the money that the user inputs into the scanner and add it in to an array 
-		centCount = centCount + value;
+		currentCents = currentCents + value;
 		}
 	public int[] currentValue()
 		{
 		int[] currentValueArray;
 		currentValueArray = new int[2];
-		currentValueArray[0] = (int) centCount/100;
-		currentValueArray[1] = centCount%100;
+		currentValueArray[0] = (int) currentCents/100;
+		currentValueArray[1] = currentCents%100;
 		return currentValueArray;
 		}
 	public void purchase(int price)
 		{
-		ProductManager.get(item number).getCostInCents();
-		// make sure you have the variable that will get the correct product
+				// make sure you have the variable that will get the correct product
+		currentCents = currentCents - price;
 		}
 	public String returnChange(int[] money)
 		{
-		ProductManager.get(item number).getPrice() - centCount);
+		return("Your change is " + currentCents + " cents.");
 		}
 	public static String showCash(int[] money)
 		{
